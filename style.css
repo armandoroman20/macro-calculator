@@ -1,0 +1,15 @@
+img.logo{
+    height: 200px;
+    width: auto;
+}
+
+.title{
+    text-align: center;
+}
+
+.mainForm {
+    padding-top: 25px;
+}
+.results {
+    padding-top: 25px;
+}
