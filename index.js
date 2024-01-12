@@ -1,6 +1,4 @@
-  // Your function to handle calculations
   function performCalculations() {
-    // Get input values
     var itemName = $("#itemName").val();
     var servingSize = $("#servingSize").val();
     var weighedServing = $("#weighed").val();
@@ -9,8 +7,6 @@
     var carbs = $("#carbs").val();
     var fats = $("#fats").val();
 
-    // Perform your calculations here
-    // Example: Calculate total calories based on serving size
     var calculatedServing = (weighedServing / servingSize);
     var totalCalories = Math.floor(calculatedServing * calories);
     var totalProtein = Math.floor(calculatedServing * protein);
@@ -20,23 +16,30 @@
 
 
     // Display the results in the "results" div
-    // $(".results").html("<p>Item Name: " + itemName + "</p>");
-    // $(".results").append("<p>Calories per serving: " + calories + "</p>");
-    // $(".results").append("<p>Protein per serving: " + protein + "</p>");
-    // $(".results").append("<p>Carbs per serving: " + carbs + "</p>");
-    // $(".results").append("<p>Fats per serving: " + fats + "</p>");
-    // $(".results").append("<p>Amount Weighed: " + weighedServing + "</p>");
-
-
-
+    $(".results").html("<p>Item Name: " + itemName + "</p>");
+    $(".results").append("<p>Amount Weighed: " + weighedServing + "</p>");
+    // $(".results").append("<p>Item Name: " + itemName + "</p>");
     $(".results").append("<p>Total Calories: " + totalCalories + "</p>");
     $(".results").append("<p>Total Protein: " + totalProtein + "</p>");
     $(".results").append("<p>Total Carbs: " + totalCarbs + "</p>"); 
     $(".results").append("<p>Total Fats: " + totalFat + "</p>");
-    // Add more lines to display other calculated results
+
+  class Food {
+  constructor(itemName, servingSize, calories, protein, carbs, fats) {
+    this.itemName = itemName;
+    this.servingSize = servingSize;
+    this.calories = calories;
+    this.protein = protein;
+    this.carbs = carbs;
+    this.fats = fats;
+  }
+}
+
+var foodItem = new Food(itemName, servingSize, calories, protein, carbs, fats);
+
+console.log(foodItem);
   }
 
-  // Event handler for form submission
   $(document).ready(function () {
     $("#submitButton").on("click", function (event) {
       // Prevent the default form submission behavior
@@ -46,3 +49,5 @@
       performCalculations();
     });
   });
+
+  
