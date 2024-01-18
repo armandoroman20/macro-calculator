@@ -1,3 +1,14 @@
+  class Food {
+  constructor(itemName, servingSize, calories, protein, carbs, fats) {
+    this.itemName = itemName;
+    this.servingSize = servingSize;
+    this.calories = calories;
+    this.protein = protein;
+    this.carbs = carbs;
+    this.fats = fats;
+  }
+}  
+  
   function performCalculations() {
     var itemName = $("#itemName").val();
     var servingSize = $("#servingSize").val();
@@ -24,20 +35,11 @@
     $(".results").append("<p>Total Carbs: " + totalCarbs + "</p>"); 
     $(".results").append("<p>Total Fats: " + totalFat + "</p>");
 
-  class Food {
-  constructor(itemName, servingSize, calories, protein, carbs, fats) {
-    this.itemName = itemName;
-    this.servingSize = servingSize;
-    this.calories = calories;
-    this.protein = protein;
-    this.carbs = carbs;
-    this.fats = fats;
-  }
-}
-
 var foodItem = new Food(itemName, servingSize, calories, protein, carbs, fats);
 
 console.log(foodItem);
+
+
   }
 
   $(document).ready(function () {
