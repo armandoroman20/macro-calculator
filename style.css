@@ -13,3 +13,12 @@ img.logo {
 .results {
   padding-top: 25px;
 }
+
+.button-toggler {
+  display: flex;
+  justify-content: center;
+}
+
+.button-toggler button {
+  margin: 10px;
+}
