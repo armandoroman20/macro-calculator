@@ -9,16 +9,41 @@ class Food {
   }
 }
 
+// creating new Food objects to be used in the dropdown for easier use
+const chicken = new Food("Chicken", 85, 128, 26, 0, 2.7); 
+const rice = new Food("Rice", 120, 160, 3, 35, 0);
+
+// Function to populate form fields based on selected food
+function populateFields(food) {
+  $("#itemName").val(food.itemName);
+  $("#servingSize").val(food.servingSize);
+  $("#calories").val(food.calories);
+  $("#protein").val(food.protein);
+  $("#carbs").val(food.carbs);
+  $("#fats").val(food.fats);
+}
+
+$(document).ready(function () {
+  // Populate the form fields with chicken data when it's selected
+  $("#foodSelect").on("change", function () {
+    const selectedFood = $(this).val();
+    if (selectedFood === "chicken") {
+      populateFields(chicken);
+    }
+  });
+});
+
+
 function performCalculations() {
   var itemName = $("#itemName").val();
   var servingSize = $("#servingSize").val();
-  var weighedServing = $("#weighedServing").val();
+  var weighed = $("#weighed").val(); // Corrected ID here
   var calories = $("#calories").val();
   var protein = $("#protein").val();
   var carbs = $("#carbs").val();
   var fats = $("#fats").val();
 
-  var calculatedServing = weighedServing / servingSize;
+  var calculatedServing = weighed / servingSize; // Changed variable name to weighed
   var totalCalories = Math.floor(calculatedServing * calories);
   var totalProtein = Math.floor(calculatedServing * protein);
   var totalCarbs = Math.floor(calculatedServing * carbs);
@@ -26,7 +51,7 @@ function performCalculations() {
 
   // Display the results in the "results" div
   $(".results").html(`<p>Item Name: ${itemName}</p>
-                      <p>Amount Weighed: ${weighedServing}</p>
+                      <p>Amount Weighed: ${weighed}</p> <!-- Changed variable name to weighed -->
                       <p>Total Calories: ${totalCalories}</p>
                       <p>Total Protein: ${totalProtein}</p>
                       <p>Total Carbs: ${totalCarbs}</p>
@@ -44,91 +69,4 @@ $(document).ready(function () {
     // Call the function when the form is submitted
     performCalculations();
   });
-});
-
-document.getElementById('newItemSubmitButton').addEventListener('click', function () {
-  // Retrieve form input values
-  var itemName = document.getElementById('newItemName').value;
-  var servingSize = document.getElementById('newItemServingSize').value;
-  var calories = document.getElementById('newItemCalories').value;
-  var protein = document.getElementById('newItemProtein').value;
-  var carbs = document.getElementById('newItemCarbs').value;
-  var fats = document.getElementById('newItemFats').value;
-
-  // Create a JavaScript object with the form data
-  var foodData = {
-    itemName: itemName,
-    servingSize: servingSize,
-    calories: calories,
-    protein: protein,
-    carbs: carbs,
-    fats: fats
-  };
-
-  // Send the data to the server for processing
-  fetch('/processFormData', {
-    method: 'POST',
-    headers: {
-      'Content-Type': 'application/json',
-    },
-    body: JSON.stringify(foodData),
-  })
-    .then(response => response.json())
-    .then(data => {
-      console.log('Success:', data);
-    })
-    .catch(error => {
-      console.error('Error:', error);
-    });
-});
-
-document.addEventListener('DOMContentLoaded', function () {
-  // Fetch and populate dropdown options
-  fetch('/getFoodOptions')
-    .then(response => response.json())
-    .then(data => {
-      const foodDropdown = document.getElementById('foodDropdown');
-
-      // Populate dropdown options
-      data.forEach(food => {
-        const option = document.createElement('option');
-        option.value = food.itemName;
-        option.textContent = food.itemName;
-        foodDropdown.appendChild(option);
-      });
-
-      // Attach event listener to handle selection
-      foodDropdown.addEventListener('change', function () {
-        const selectedFood = foodDropdown.value;
-        displayFoodDetails(selectedFood);
-      });
-    })
-    .catch(error => {
-      console.error('Error fetching food options:', error);
-    });
-
-  // Function to display food details
-  function displayFoodDetails(selectedFood) {
-    const selectedFoodDetails = document.getElementById('selectedFoodDetails');
-    selectedFoodDetails.innerHTML = '';  // Clear previous details
-
-    // Fetch and display details for the selected food
-    fetch(`/getFoodDetails?itemName=${encodeURIComponent(selectedFood)}`)
-      .then(response => response.json())
-      .then(details => {
-        const detailsList = document.createElement('ul');
-
-        // Create list items for each detail
-        Object.keys(details).forEach(key => {
-          const listItem = document.createElement('li');
-          listItem.textContent = `${key}: ${details[key]}`;
-          detailsList.appendChild(listItem);
-        });
-
-        selectedFoodDetails.appendChild(detailsList);
-      })
-      .catch(error => {
-        console.error('Error fetching food details:', error);
-      });
-  }
 });
