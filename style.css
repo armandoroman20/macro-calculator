@@ -1,6 +1,7 @@
 img.logo {
   height: 200px;
   width: auto;
+  max-width: fit-content;
 }
 
 .title {
@@ -21,4 +22,12 @@ img.logo {
 
 .button-toggler button {
   margin: 10px;
+}
+
+@media (max-width: 480px) {
+
+  img.logo {
+      margin: auto;
+    }
+
 }
