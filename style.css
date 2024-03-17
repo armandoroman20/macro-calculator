@@ -113,6 +113,15 @@ button.btn {
   font-weight: 500;
 }
 
+.hide {
+  display: none !important;
+}
+
+.show {
+  display: block !important;
+}
+
+
 @media (max-width: 480px) {
 
   h1 {
