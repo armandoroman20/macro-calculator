@@ -10,7 +10,7 @@ h2, h3, h4, h5, p, .btn  {
   padding-top: 25px;
   padding-left: 40px;
   padding-right: 40px;
-  background: #111111;
+  background: #f2f3f5;
 }
 
 .mainFormContainer {
@@ -23,14 +23,14 @@ label, input::placeholder {
 }
 
 input::placeholder {
-  color: #111111 !important;
+  color: #121319 !important;
 }
 
 h1 {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 600;
   font-size: 4em;
-  color: #111111;
+  color: #121319;
 }
 
 p {
@@ -41,6 +41,7 @@ p {
 label {
   font-size: 1.25em;
   font-weight: 500;
+  color: #121319;
 }
 
 img.logo {
@@ -50,7 +51,7 @@ img.logo {
 
 .title, .disclaimer {
   text-align: center;
-  color: #111111;
+  color: #121319;
 }
 
 .title {
@@ -66,7 +67,7 @@ img.logo {
 }
 
 .results p {
-  color: #111111;
+  color: #121319;
   font-weight: bold;
 }
 
@@ -80,8 +81,8 @@ img.logo {
 }
 
 button {
-  background-color: #111111;
-  color: #999999;
+  background: #121319;
+  color: #f2f3f5;
 }
 
 button:hover {
