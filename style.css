@@ -1,3 +1,10 @@
+/* colors
+light gray: #fcfcfc
+dark gray: #252525
+darkest gray: #181f24
+green: #1baf95
+font color: white */
+
 body {
   font-size: 16px;
 }
@@ -11,14 +18,14 @@ h2, h3, h4, h5, p, .btn  {
   padding-left: 40px;
   padding-right: 40px;
   padding-bottom: 40px;
-  background: #f2f3f5;
+  background: #181f24;
 }
 
 .mainFormContainer {
   margin-right: 10%;
   margin-left: 10%;
   padding: 2% 4%;
-  background: #dee2e4;
+  background: #252525;
   border-radius: 25px;
 }
 
@@ -34,7 +41,7 @@ h1 {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 600;
   font-size: 4em;
-  color: #121319;
+  color: #ffffff;
 }
 
 p {
@@ -45,7 +52,7 @@ p {
 label {
   font-size: 1.25em;
   font-weight: 500;
-  color: #121319;
+  color: #ffffff;
 }
 
 img.logo {
@@ -55,7 +62,7 @@ img.logo {
 
 .title, .disclaimer {
   text-align: center;
-  color: #121319;
+  color: #ffffff;
 }
 
 .title {
@@ -85,12 +92,13 @@ img.logo {
 }
 
 button {
-  background: #121319;
-  color: #f2f3f5;
+  background: #1baf95;
+  color: #ffffff;
 }
 
 button:hover {
-  color: #dee2e4;
+  background: #fcfcfc;
+  color: #ffffff;
 }
 
 
