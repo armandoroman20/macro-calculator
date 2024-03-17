@@ -10,12 +10,16 @@ h2, h3, h4, h5, p, .btn  {
   padding-top: 25px;
   padding-left: 40px;
   padding-right: 40px;
+  padding-bottom: 40px;
   background: #f2f3f5;
 }
 
 .mainFormContainer {
   margin-right: 10%;
   margin-left: 10%;
+  padding: 2% 4%;
+  background: #dee2e4;
+  border-radius: 25px;
 }
 
 label, input::placeholder {
