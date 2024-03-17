@@ -1,8 +1,8 @@
 /* colors
-light gray: #fcfcfc
-dark gray: #252525
-darkest gray: #181f24
-green: #1baf95
+button background: #92f3f3
+Main background: #060606
+Form Container: #1e2629
+other background: #3c6d75
 font color: white */
 
 body {
@@ -18,14 +18,14 @@ h2, h3, h4, h5, p, .btn  {
   padding-left: 40px;
   padding-right: 40px;
   padding-bottom: 40px;
-  background: #181f24;
+  background: #060606;
 }
 
 .mainFormContainer {
   margin-right: 10%;
   margin-left: 10%;
   padding: 2% 4%;
-  background: #252525;
+  background: #3c6d75;
   border-radius: 25px;
 }
 
@@ -34,14 +34,14 @@ label, input::placeholder {
 }
 
 input::placeholder {
-  color: #121319 !important;
+  color: #181F24 !important;
 }
 
 h1 {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 600;
   font-size: 3em;
-  color: #ffffff;
+  color: #92f3f3;
 }
 
 p {
@@ -62,7 +62,6 @@ img.logo {
 
 .title, .disclaimer {
   text-align: center;
-  color: #ffffff;
 }
 
 .title {
@@ -72,6 +71,9 @@ img.logo {
   text-transform: uppercase;
 }
 
+.disclaimer {
+  color: white;
+}
 
 .results {
   padding-top: 25px;
@@ -93,15 +95,18 @@ img.logo {
 }
 
 button {
-  background: #1baf95;
-  color: #ffffff;
+  background: #92f3f3;
+  color: #3c6d75;
 }
 
 button:hover {
-  background: #fcfcfc;
-  color: #1baf95;
+  background: #1e2629;
+  color: #92f3f3;
 }
 
+button.btn {
+  font-weight: 500;
+}
 
 @media (max-width: 480px) {
 

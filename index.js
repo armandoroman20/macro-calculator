@@ -104,13 +104,13 @@ $(document).ready(function () {
 });
 
 
-$(document).ready(function () {
-  // Event handler for toggling between forms
-  $("#showNewItemFormButton, #showCalculatorFormButton").on("click", function () {
-    // Toggle visibility of forms
-    $("#currentForm, #newItemForm").toggle();
-  });
-});
+// $(document).ready(function () {
+//   // Event handler for toggling between forms
+//   $("#showNewItemFormButton, #showCalculatorFormButton").on("click", function () {
+//     // Toggle visibility of forms
+//     $("#currentForm, #newItemForm").toggle();
+//   });
+// });
 
 
     // Event handler for saving the new item
