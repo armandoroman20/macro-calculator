@@ -6,20 +6,31 @@ h2, h3, h4, h5, p, .btn  {
       font-family: "Montserrat", sans-serif;
 }
 
+.container-fluid {
+  padding-top: 25px;
+  padding-left: 40px;
+  padding-right: 40px;
+  background: #999999;
+}
+
+.mainFormContainer {
+  margin-right: 10%;
+  margin-left: 10%;
+}
 
 label, input::placeholder {
     font-family: "Nunito Sans", sans-serif;
 }
 
 input::placeholder {
-  color: #434546 !important;
+  color: #111111 !important;
 }
 
 h1 {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 600;
   font-size: 4em;
-  color: #434546;
+  color: #111111;
 }
 
 p {
@@ -39,7 +50,7 @@ img.logo {
 
 .title, .disclaimer {
   text-align: center;
-  color: #717276;
+  color: #111111;
 }
 
 .title {
@@ -48,25 +59,15 @@ img.logo {
   justify-content: center;
 }
 
-.container-fluid {
-  padding-top: 25px;
-  padding-left: 40px;
-  padding-right: 40px;
-  background-color: #f0f1f3;
-}
 
-.mainFormContainer {
-  margin-right: 10%;
-  margin-left: 10%;
-}
 .results {
   padding-top: 25px;
 
 }
 
 .results p {
-    color: #434546;
-      font-weight: bold;
+  color: #111111;
+  font-weight: bold;
 }
 
 .button-toggler {
@@ -79,7 +80,11 @@ img.logo {
 }
 
 button {
-  background-color: #15161a;
+  background-color: #111111;
+  color: #999999;
+}
+
+button:hover {
   color: white;
 }
 
