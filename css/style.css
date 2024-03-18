@@ -137,7 +137,7 @@ button.btn {
 
 @media (max-width: 480px) {
 
-  h1 {
+  .title h1, .title h3 {
     line-height: .75em;
   }
   .title {
