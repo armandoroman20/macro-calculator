@@ -38,10 +38,28 @@ input::placeholder {
   color: #ffffff !important;
 }
 
-h1 {
+.title {
+  margin-bottom: 20px;
+}
+
+.title h1, .title h3 {
   font-family: "Nunito Sans", sans-serif;
+  color: #434b56;
+  line-height: .75em;
+  text-transform: uppercase;
+}
+
+.title h1 {
   font-weight: 600;
   font-size: 3em;
+}
+
+.title h3 {
+  font-weight: 600;
+  font-size: 1.5em;
+}
+
+.disclaimer {
   color: #434b56;
 }
 
@@ -70,16 +88,9 @@ img.logo {
   text-align: center;
 }
 
-.title {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  text-transform: uppercase;
-}
 
-.disclaimer {
-  color: #434b56;
-}
+
+
 
 .results {
   padding-top: 25px;
