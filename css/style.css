@@ -46,17 +46,18 @@ input::placeholder {
   font-family: "Nunito Sans", sans-serif;
   color: #434b56;
   line-height: .75em;
-  text-transform: uppercase;
 }
 
 .title h1 {
   font-weight: 600;
   font-size: 3em;
+  text-transform: uppercase;
 }
 
 .title h3 {
   font-weight: 600;
   font-size: 1.5em;
+  text-transform: lowercase;
 }
 
 .disclaimer {
