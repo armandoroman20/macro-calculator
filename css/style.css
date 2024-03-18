@@ -56,7 +56,8 @@ input::placeholder {
 
 .title h3 {
   font-weight: 600;
-  font-size: 1.65em;
+  font-size: 1.5em;
+  text-transform: lowercase;
 }
 
 .disclaimer {
