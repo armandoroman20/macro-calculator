@@ -56,12 +56,12 @@ input::placeholder {
 
 .title h3 {
   font-weight: 600;
-  font-size: 1.5em;
-  text-transform: lowercase;
+  font-size: 1.65em;
 }
 
 .disclaimer {
   color: #434b56;
+  font-size: .75em;
 }
 
 p {
