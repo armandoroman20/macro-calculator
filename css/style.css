@@ -1,9 +1,10 @@
-/* colors
-button background: #92f3f3
-Main background: #060606
-Form Container: #1e2629
-other background: #3c6d75
-font color: white */
+/* colors all all blue-gray variations
+lightest: #aeb8c1
+medium: #a4b4bb
+dark: #616b75
+darkest: #434b56
+
+*/
 
 body {
   font-size: 16px;
@@ -18,7 +19,7 @@ h2, h3, h4, h5, p, .btn  {
   padding-left: 40px;
   padding-right: 40px;
   padding-bottom: 40px;
-  background: #060606;
+  background: #a4b4bb;
 }
 
 .mainFormContainer {
@@ -41,7 +42,7 @@ h1 {
   font-family: "Nunito Sans", sans-serif;
   font-weight: 600;
   font-size: 3em;
-  color: #92f3f3;
+  color: #434b56;
 }
 
 p {
@@ -52,13 +53,13 @@ p {
 label {
   font-size: 1.25em;
   font-weight: 500;
-  color: #92f3f3;
+  color: #434b56;
 }
 
 .form-control {
-  background: #495057;
-  color: white;
-  border: 1px solid #3c6d75;
+  background: #aeb8c1;
+  color: #ffffff;
+  border: 1px solid #000000;
 }
 img.logo {
   height: 200px;
@@ -77,7 +78,7 @@ img.logo {
 }
 
 .disclaimer {
-  color: white;
+  color: #434b56;
 }
 
 .results {
@@ -86,7 +87,7 @@ img.logo {
 }
 
 .results p {
-  color: #92f3f3;
+  color: #ffffff;
   font-weight: bold;
 }
 
@@ -100,13 +101,13 @@ img.logo {
 }
 
 button {
-  background: #92f3f3;
-  color: #3c6d75;
+  background: #616b75;
+  color: #a4b4bb;
 }
 
 button:hover {
-  background: #1e2629;
-  color: #92f3f3;
+  background: #434b56;
+  color: #a4b4bb;
 }
 
 button.btn {
