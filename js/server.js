@@ -1,11 +1,13 @@
 const express = require('express');
+const cors = require('cors');
 const bodyParser = require('body-parser');
 const mysql = require('mysql');
 
 const app = express();
 const port = 3000;
 
-// Middleware to parse JSON bodies
+// Middleware
+app.use(cors()); // Enable CORS
 app.use(bodyParser.json());
 
 // Create a MySQL database connection pool
@@ -43,20 +45,20 @@ app.post('/api/foods', function(req, res, next) {
     });
 });
 
-// API endpoint to fetch food options from the database
-app.get('/api/foods/options', (req, res) => {
-    // Query the database to get all food options
-    pool.query('SELECT itemName FROM foods', (err, results) => {
-        if (err) {
-            console.error('Error querying database:', err);
-            res.status(500).send('Internal Server Error');
-            return;
-        }
-        // Extract the item names from the query results
-        const foodOptions = results.map(row => row.itemName);
-        res.json(foodOptions);
-    });
-});
+// app.get('/api/foods', (req, res) => {
+//     // Query the database to fetch items
+//     pool.query('SELECT name FROM foods', (err, results) => {
+//         if (err) {
+//             console.error('Error querying database:', err);
+//             res.status(500).send('Internal Server Error');
+//             return;
+//         }
+//         // Extract the item names from the query results
+//         const items = results.map(row => row.name);
+//         res.json(items);
+//     });
+// });
+
 
 
 // Start the server
