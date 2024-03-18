@@ -3,7 +3,7 @@ const bodyParser = require('body-parser');
 const mysql = require('mysql');
 
 const app = express();
-const PORT = 3000;
+const port = 3000;
 
 // Middleware to parse JSON bodies
 app.use(bodyParser.json());
@@ -17,35 +17,49 @@ const pool = mysql.createPool({
     database: 'macro_calculator'
 });
 
-// API endpoint to add a new food item
-app.post('/api/foods', (req, res) => {
-    const { name, servingSize, calories, protein, carbs, fats } = req.body;
-    pool.query(`INSERT INTO foods (name, servingSize, calories, protein, carbs, fats) VALUES (?, ?, ?, ?, ?, ?)`,
-        [name, servingSize, calories, protein, carbs, fats],
-        (err, results) => {
-            if (err) {
-                console.error(err.message);
-                res.status(500).send('Error adding food item');
-                console.log("error sending food item");
-            } else {
-                res.status(201).send('Food item added successfully');
-                console.log("food item sent");
-            }
-        });
-});
+// Middleware to parse JSON and URL-encoded bodies
+app.use(express.json());
+app.use(express.urlencoded({ extended: true }));
 
-// API endpoint to fetch all food items
-app.get('/api/foods', (req, res) => {
-    pool.query(`SELECT * FROM foods`, (err, results) => {
+// API endpoint to add a new food item
+app.post('/api/foods', function(req, res, next) {
+    var name = req.body.newItemName;
+    var servingSize = req.body.newItemServingSize;
+    var calories = req.body.newItemCalories;
+    var protein = req.body.newItemProtein;
+    var carbs = req.body.newItemCarbs;
+    var fats = req.body.newItemFats;
+
+    // Use pool.query() to execute the SQL query
+    var sql = `INSERT INTO foods (name, servingSize, calories, protein, carbs, fats) VALUES (?, ?, ?, ?, ?, ?)`;
+    pool.query(sql, [name, servingSize, calories, protein, carbs, fats], function(err, result) {
         if (err) {
-            console.error(err.message);
-            res.status(500).send('Error fetching food items');
-        } else {
-            res.json(results);
+            console.error('Error executing MySQL query:', err);
+            res.status(500).send('Internal Server Error');
+            return;
         }
+        console.log('Record inserted');
+        res.send('Data added successfully!');
     });
 });
 
-app.listen(PORT, () => {
-    console.log(`Server running on port ${PORT}`);
+// API endpoint to fetch food options from the database
+app.get('/api/foods/options', (req, res) => {
+    // Query the database to get all food options
+    pool.query('SELECT itemName FROM foods', (err, results) => {
+        if (err) {
+            console.error('Error querying database:', err);
+            res.status(500).send('Internal Server Error');
+            return;
+        }
+        // Extract the item names from the query results
+        const foodOptions = results.map(row => row.itemName);
+        res.json(foodOptions);
+    });
+});
+
+
+// Start the server
+app.listen(port, () => {
+    console.log(`Server running at http://localhost:${port}`);
 });
