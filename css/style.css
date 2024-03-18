@@ -137,7 +137,7 @@ button.btn {
 @media (max-width: 480px) {
 
   h1 {
-    line-height: 1em;
+    line-height: .75em;
   }
   .title {
     display: block;
