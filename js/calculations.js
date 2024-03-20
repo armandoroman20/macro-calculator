@@ -14,8 +14,8 @@ function performCalculations() {
   var totalFat = Math.floor(calculatedServing * fats);
 
   // Display the results in the "results" div
-  $(".results").html(`<p>Item Name: ${itemName}</p>
-                      <p>Amount Weighed: ${weighed}</p> <!-- Changed variable name to weighed -->
+  // <p>Amount Weighed: ${weighed}</p> 
+  $(".results").html(`<p>Item Name: ${itemName} (${weighed})</p>
                       <p>Total Calories: ${totalCalories}</p>
                       <p>Total Protein: ${totalProtein}</p>
                       <p>Total Carbs: ${totalCarbs}</p>
