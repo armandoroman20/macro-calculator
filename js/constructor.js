@@ -18,7 +18,8 @@ const foods = {
   cajunPotatoes: new Food("Cajun Potatoes", 100, 90, 2, 18, 1),
   chickenPatty: new Food("Chicken Patty", 85, 170, 12, 15, 7),
   spicyKetchup: new Food("Spicy Ketchup", 17, 20, 0, 4, 0),
-  optimumNutritionChocolate: new Food("Optimum Nutrition Exteme Milk Chocolate Protein", 32, 120,24, 3, 2),
+  optimumNutritionChocolate: new Food("Optimum Nutrition Exteme Milk Chocolate Protein", 32, 120, 24, 3, 2),
+  borrachoBeans: new Food("H-E-B Borracho Beans", 130, 90, 5, 15, 1.5),
 
   // Add more food objects here as needed
 };
