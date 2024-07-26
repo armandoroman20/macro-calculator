@@ -23,7 +23,9 @@ const foods = {
   blackBeans: new Food("H-E-B Black Beans", 130, 100, 7, 19, 0),
   crinkleCutFries: new Food("H-E-B Crinkle Cut Fries", 84, 100, 2, 16, 3),
   gardenSaladBlend: new Food("H-E-B Garden Salad", 85, 15, 1, 3, 0),
-  lighBalsamic: new Food("H-E-B Ligh Balsamic", 30, 15, 0, 2, .5)
+  lighBalsamic: new Food("H-E-B Light Balsamic", 30, 15, 0, 2, .5),
+  gratedParmesan: new Food("H-E-B Grated Parmesan", 5, 20, 2, 0, 1.5),
+
 
 
   // Add more food objects here as needed
