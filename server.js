@@ -1,35 +1,26 @@
-const express = require('express');
 const fs = require('fs');
-const path = require('path'); // Ensure you import the path module
+const path = require('path');
+const express = require('express');
 const app = express();
-const port = process.env.PORT || 3000; // Define the port
+const port = 3000;
 
-const filePath = path.join(__dirname, 'foods.json'); // Use path to create the file path
+const foodsFilePath = path.join(__dirname, 'foods.json');
 
+// Serve static files from the root directory
+app.use(express.static(__dirname));
+
+// Middleware to parse JSON requests
 app.use(express.json());
-app.use(express.static(path.join(__dirname, 'public')));
-
-// Define the Food class
-class Food {
-  constructor(itemName, servingSize, calories, protein, carbs, fats) {
-    this.itemName = itemName;
-    this.servingSize = servingSize;
-    this.calories = calories;
-    this.protein = protein;
-    this.carbs = carbs;
-    this.fats = fats;
-  }
-}
 
 // Read foods data from JSON file
 function readFoods() {
-  const data = fs.readFileSync(filePath);
+  const data = fs.readFileSync(foodsFilePath);
   return JSON.parse(data);
 }
 
 // Write foods data to JSON file
 function writeFoods(foods) {
-  fs.writeFileSync(filePath, JSON.stringify(foods, null, 2));
+  fs.writeFileSync(foodsFilePath, JSON.stringify(foods, null, 2));
 }
 
 // Get foods
@@ -39,23 +30,23 @@ app.get('/api/foods', (req, res) => {
 
 // Load existing foods or initialize as empty object
 let foods = {};
-if (fs.existsSync(filePath)) {
-  foods = JSON.parse(fs.readFileSync(filePath, 'utf-8'));
+if (fs.existsSync(foodsFilePath)) {
+  foods = JSON.parse(fs.readFileSync(foodsFilePath, 'utf-8'));
 }
 
 // Add new food
 app.post('/api/foods', (req, res) => {
   const { itemName, servingSize, calories, protein, carbs, fats } = req.body;
-
+  
   if (!itemName) {
     return res.status(400).json({ message: 'Item name is required' });
   }
-
+  
   if (isNaN(servingSize) || isNaN(calories) || isNaN(protein) || isNaN(carbs) || isNaN(fats)) {
     return res.status(400).json({ message: 'Serving size, calories, protein, carbs, and fats must be numbers' });
   }
 
-  const newFood = new Food(itemName, servingSize, calories, protein, carbs, fats);
+  const newFood = { itemName, servingSize, calories, protein, carbs, fats };
 
   // Use the item name as the key
   foods[itemName] = newFood;
@@ -64,6 +55,10 @@ app.post('/api/foods', (req, res) => {
   res.json({ message: 'Food item added successfully' });
 });
 
+// Serve index.html for any request that does not match the API routes
+app.get('/', (req, res) => {
+  res.sendFile(path.join(__dirname, 'index.html'));
+});
 
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
