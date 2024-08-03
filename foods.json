@@ -1,0 +1,106 @@
+{
+  "Chicken": {
+    "itemName": "Chicken",
+    "servingSize": 10,
+    "calories": 10,
+    "protein": 10,
+    "carbs": 10,
+    "fats": 10
+  },
+  "Rice": {
+    "itemName": "Rice",
+    "servingSize": 120,
+    "calories": 160,
+    "protein": 3,
+    "carbs": 35,
+    "fats": 0
+  },
+  "Lean Beef 96/4": {
+    "itemName": "Lean Beef 96/4",
+    "servingSize": 88,
+    "calories": 140,
+    "protein": 24,
+    "carbs": 0,
+    "fats": 5
+  },
+  "Cajun Potatoes": {
+    "itemName": "Cajun Potatoes",
+    "servingSize": 100,
+    "calories": 90,
+    "protein": 2,
+    "carbs": 18,
+    "fats": 1
+  },
+  "Chicken Patty": {
+    "itemName": "Chicken Patty",
+    "servingSize": 85,
+    "calories": 170,
+    "protein": 12,
+    "carbs": 15,
+    "fats": 7
+  },
+  "Spicy Ketchup": {
+    "itemName": "Spicy Ketchup",
+    "servingSize": 17,
+    "calories": 20,
+    "protein": 0,
+    "carbs": 4,
+    "fats": 0
+  },
+  "Optimum Nutrition Exteme Milk Chocolate Protein": {
+    "itemName": "Optimum Nutrition Exteme Milk Chocolate Protein",
+    "servingSize": 32,
+    "calories": 120,
+    "protein": 24,
+    "carbs": 3,
+    "fats": 2
+  },
+  "H-E-B Borracho Beans": {
+    "itemName": "H-E-B Borracho Beans",
+    "servingSize": 130,
+    "calories": 90,
+    "protein": 5,
+    "carbs": 15,
+    "fats": 2
+  },
+  "H-E-B Black Beans": {
+    "itemName": "H-E-B Black Beans",
+    "servingSize": 130,
+    "calories": 100,
+    "protein": 7,
+    "carbs": 19,
+    "fats": 0
+  },
+  "H-E-B Crinkle Cut Fries": {
+    "itemName": "H-E-B Crinkle Cut Fries",
+    "servingSize": 84,
+    "calories": 100,
+    "protein": 2,
+    "carbs": 16,
+    "fats": 3
+  },
+  "H-E-B Garden Salad": {
+    "itemName": "H-E-B Garden Salad",
+    "servingSize": 85,
+    "calories": 15,
+    "protein": 1,
+    "carbs": 3,
+    "fats": 0
+  },
+  "H-E-B Light Balsamic": {
+    "itemName": "H-E-B Light Balsamic",
+    "servingSize": 30,
+    "calories": 15,
+    "protein": 0,
+    "carbs": 2,
+    "fats": 1
+  },
+  "H-E-B Grated Parmesan": {
+    "itemName": "H-E-B Grated Parmesan",
+    "servingSize": 5,
+    "calories": 20,
+    "protein": 2,
+    "carbs": 0,
+    "fats": 2
+  }
+}
