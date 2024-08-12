@@ -1,11 +1,11 @@
 {
   "Chicken": {
     "itemName": "Chicken",
-    "servingSize": 10,
-    "calories": 10,
-    "protein": 10,
-    "carbs": 10,
-    "fats": 10
+    "servingSize": 85,
+    "calories": 128,
+    "protein": 26,
+    "carbs": 0,
+    "fats": 3
   },
   "Rice": {
     "itemName": "Rice",
