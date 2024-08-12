@@ -102,5 +102,21 @@
     "protein": 2,
     "carbs": 0,
     "fats": 2
+  },
+  "H-E-B Thick Salsa Medium": {
+    "itemName": "H-E-B Thick Salsa Medium",
+    "servingSize": 32,
+    "calories": 20,
+    "protein": 0,
+    "carbs": 2,
+    "fats": 0
+  },
+  "H-E-B Regular Cut Fries": {
+    "itemName": "H-E-B Regular Cut Fries",
+    "servingSize": 84,
+    "calories": 130,
+    "protein": 2,
+    "carbs": 21,
+    "fats": 4
   }
 }
