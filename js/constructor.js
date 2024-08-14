@@ -25,6 +25,10 @@ const foods = {
   gardenSaladBlend: new Food("H-E-B Garden Salad", 85, 15, 1, 3, 0),
   lighBalsamic: new Food("H-E-B Light Balsamic", 30, 15, 0, 2, .5),
   gratedParmesan: new Food("H-E-B Grated Parmesan", 5, 20, 2, 0, 1.5),
+  thickSalsaMedium: new Food("H-E-B Thick Salsa Medium", 32, 20, 0, 2, 0),
+  regularCutFries: new Food("H-E-B Regular Cut Fries", 84, 130, 2, 21, 4),
+  carbBalanceTortilla: new Food("Mission Carb Balance Tortillas", 71, 110, 10, 32, 6),
+  hcfQuesdalliaCheese: new Food("Hill Country Fare Quesadilla Cheese", 28, 90, 7, 1, 7)
 
   // Add more food objects here as needed
 };
