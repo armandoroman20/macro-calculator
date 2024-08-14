@@ -118,5 +118,21 @@
     "protein": 2,
     "carbs": 21,
     "fats": 4
+  },
+  "Mission Carb Balance Tortillas": {
+    "itemName": "Mission Carb Balance Tortillas",
+    "servingSize": 71,
+    "calories": 110,
+    "protein": 10,
+    "carbs": 32,
+    "fats": 6
+  },
+  "Hill Country Fare Quesadilla Cheese": {
+    "itemName": "Hill Country Fare Quesadilla Cheese",
+    "servingSize": 28,
+    "calories": 90,
+    "protein": 7,
+    "carbs": 1,
+    "fats": 7
   }
 }
