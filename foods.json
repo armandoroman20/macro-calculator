@@ -1,11 +1,11 @@
 {
   "Chicken": {
     "itemName": "Chicken",
-    "servingSize": 10,
-    "calories": 10,
-    "protein": 10,
-    "carbs": 10,
-    "fats": 10
+    "servingSize": 85,
+    "calories": 128,
+    "protein": 26,
+    "carbs": 0,
+    "fats": 3
   },
   "Rice": {
     "itemName": "Rice",
@@ -103,6 +103,7 @@
     "carbs": 0,
     "fats": 2
   },
+<<<<<<< HEAD
   "Fudgsicle": {
     "itemName": "Fudgsicle",
     "servingSize": 119,
@@ -110,5 +111,38 @@
     "protein": 1,
     "carbs": 9,
     "fats": 1
+=======
+  "H-E-B Thick Salsa Medium": {
+    "itemName": "H-E-B Thick Salsa Medium",
+    "servingSize": 32,
+    "calories": 20,
+    "protein": 0,
+    "carbs": 2,
+    "fats": 0
+  },
+  "H-E-B Regular Cut Fries": {
+    "itemName": "H-E-B Regular Cut Fries",
+    "servingSize": 84,
+    "calories": 130,
+    "protein": 2,
+    "carbs": 21,
+    "fats": 4
+  },
+  "Mission Carb Balance Tortillas": {
+    "itemName": "Mission Carb Balance Tortillas",
+    "servingSize": 71,
+    "calories": 110,
+    "protein": 10,
+    "carbs": 32,
+    "fats": 6
+  },
+  "Hill Country Fare Shredded Quesadilla Cheese": {
+    "itemName": "Hill Country Fare Quesadilla Cheese",
+    "servingSize": 28,
+    "calories": 90,
+    "protein": 7,
+    "carbs": 1,
+    "fats": 7
+>>>>>>> 8c345656ee03dde0df8e5d60f4f86febece3ccc9
   }
 }
