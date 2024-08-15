@@ -103,7 +103,6 @@
     "carbs": 0,
     "fats": 2
   },
-<<<<<<< HEAD
   "Fudgsicle": {
     "itemName": "Fudgsicle",
     "servingSize": 119,
@@ -111,7 +110,7 @@
     "protein": 1,
     "carbs": 9,
     "fats": 1
-=======
+  },
   "H-E-B Thick Salsa Medium": {
     "itemName": "H-E-B Thick Salsa Medium",
     "servingSize": 32,
@@ -143,6 +142,5 @@
     "protein": 7,
     "carbs": 1,
     "fats": 7
->>>>>>> 8c345656ee03dde0df8e5d60f4f86febece3ccc9
   }
 }
