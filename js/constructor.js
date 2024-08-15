@@ -25,6 +25,7 @@ const foods = {
   gardenSaladBlend: new Food("H-E-B Garden Salad", 85, 15, 1, 3, 0),
   lighBalsamic: new Food("H-E-B Light Balsamic", 30, 15, 0, 2, .5),
   gratedParmesan: new Food("H-E-B Grated Parmesan", 5, 20, 2, 0, 1.5),
+  leanBeef: new Food("90/10 Ground Beef", 100, 176, 20, 0, 10)
 
   // Add more food objects here as needed
 };

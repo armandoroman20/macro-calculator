@@ -63,3 +63,13 @@ app.get('/', (req, res) => {
 app.listen(port, () => {
   console.log(`Server running at http://localhost:${port}`);
 });
+
+const gistUrl = 'https://gist.github.com/armandoroman20/4df4ab7296e6864051b0965da5abfc37;
+
+$.getJSON(gistUrl, function(data) {
+    const fileContent = data.files['foods.json'].content;
+    const foods = JSON.parse(fileContent);
+    updateDropdown(foods);
+}).fail(function() {
+    console.error('Failed to fetch foods data');
+});

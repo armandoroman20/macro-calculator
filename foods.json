@@ -102,5 +102,13 @@
     "protein": 2,
     "carbs": 0,
     "fats": 2
+  },
+  "Fudgsicle": {
+    "itemName": "Fudgsicle",
+    "servingSize": 119,
+    "calories": 40,
+    "protein": 1,
+    "carbs": 9,
+    "fats": 1
   }
 }
