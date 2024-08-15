@@ -135,12 +135,20 @@
     "carbs": 32,
     "fats": 6
   },
-  "Hill Country Fare Shredded Quesadilla Cheese": {
-    "itemName": "Hill Country Fare Quesadilla Cheese",
-    "servingSize": 28,
-    "calories": 90,
-    "protein": 7,
-    "carbs": 1,
-    "fats": 7
+  "90/10 Ground Beef": {
+    "itemName": "90/10 Ground Beef",
+    "servingSize": 100,
+    "calories": 176,
+    "protein": 20,
+    "carbs": 0,
+    "fats": 10
+  },
+  "80/20 Ground Beef": {
+    "itemName": "80/20 Ground Beef",
+    "servingSize": 113,
+    "calories": 287,
+    "protein": 19,
+    "carbs": 0,
+    "fats": 23
   }
 }
