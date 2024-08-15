@@ -135,6 +135,22 @@
     "carbs": 32,
     "fats": 6
   },
+  "Hill Country Fare Quesadilla Cheese": {
+    "itemName": "Hill Country Fare Quesadilla Cheese",
+    "servingSize": 28,
+    "calories": 90,
+    "protein": 7,
+    "carbs": 1,
+    "fats": 7
+  },
+  "Flank Steak": {
+    "itemName": "Flank Steak",
+    "servingSize": 85,
+    "calories": 163,
+    "protein": 24,
+    "carbs": 0,
+    "fats": 7
+  },
   "90/10 Ground Beef": {
     "itemName": "90/10 Ground Beef",
     "servingSize": 100,
