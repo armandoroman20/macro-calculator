@@ -28,7 +28,8 @@ const foods = {
   thickSalsaMedium: new Food("H-E-B Thick Salsa Medium", 32, 20, 0, 2, 0),
   regularCutFries: new Food("H-E-B Regular Cut Fries", 84, 130, 2, 21, 4),
   carbBalanceTortilla: new Food("Mission Carb Balance Tortillas", 71, 110, 10, 32, 6),
-  hcfQuesdalliaCheese: new Food("Hill Country Fare Quesadilla Cheese", 28, 90, 7, 1, 7)
+  hcfQuesdalliaCheese: new Food("Hill Country Fare Quesadilla Cheese", 28, 90, 7, 1, 7),
+  flankSteak: new Food("Flank Steak", 85, 163, 24, 0, 7)
 
   // Add more food objects here as needed
 };
