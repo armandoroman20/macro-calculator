@@ -33,6 +33,10 @@ const foods = {
   flankSteak: new Food("Flank Steak", 85, 163, 24, 0, 7),
   groundBeef9010: new Food("90/10 Ground Beef", 100, 176, 20, 0, 10),
   groundBeef8020: new Food("80/20 Ground Beef", 113, 287, 19, 0, 23),
+  rolledOats: new Food("H-E-B Rolled Oats", 40, 150, 5, 27, 2.5),
+  peanutButter: new Food("HCF Creamy Peanut Butter", 32, 180, 7, 8, 15),
+  pb2: new Food("PB2 90% Less Fat", 13, 60, 6, 5, 1.5),
+  grapeGatoradePowder: new Food("Grape Gatorade Lower Sugar Powder", 9, 30, 0, 8, 0),
 
   // Add more food objects here as needed
 };
