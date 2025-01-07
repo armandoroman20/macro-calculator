@@ -19,6 +19,7 @@ const foods = {
   chickenPatty: new Food("Chicken Patty", 85, 170, 12, 15, 7),
   spicyKetchup: new Food("Spicy Ketchup", 17, 20, 0, 4, 0),
   optimumNutritionChocolate: new Food("Optimum Nutrition Exteme Milk Chocolate Protein", 32, 120, 24, 3, 2),
+  optimumNutritionVanillaIceCream: new Food("Optimum Nutrition Vanilla Ice Cream Protein", 32, 120, 24, 3, 2),
   borrachoBeans: new Food("H-E-B Borracho Beans", 130, 90, 5, 15, 1.5),
   blackBeans: new Food("H-E-B Black Beans", 130, 100, 7, 19, 0),
   crinkleCutFries: new Food("H-E-B Crinkle Cut Fries", 84, 100, 2, 16, 3),
