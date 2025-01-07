@@ -38,7 +38,7 @@ const foods = {
   peanutButter: new Food("HCF Creamy Peanut Butter", 32, 180, 7, 8, 15),
   pb2: new Food("PB2 90% Less Fat", 13, 60, 6, 5, 1.5),
   grapeGatoradePowder: new Food("Grape Gatorade Lower Sugar Powder", 9, 30, 0, 8, 0),
-  KetoBuns: new Food("Nature's Own Keto Buns", 43, 60, 9, 17, 2.5),
+  ketoBuns: new Food("Nature's Own Keto Buns", 43, 60, 9, 17, 2.5),
 
   // Add more food objects here as needed
 };
