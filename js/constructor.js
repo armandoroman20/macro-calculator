@@ -39,6 +39,7 @@ const foods = {
   pb2: new Food("PB2 90% Less Fat", 13, 60, 6, 5, 1.5),
   grapeGatoradePowder: new Food("Grape Gatorade Lower Sugar Powder", 9, 30, 0, 8, 0),
   ketoBuns: new Food("Nature's Own Keto Buns", 43, 60, 9, 17, 2.5),
-
+  saraleeDelightfulWheat: new Food("Saralee Delightful Soft and Smooth Wheat ", 43, 90, 5, 19, 1),
+  craftSingle: new Food("Kraft Singles", 19, 60, 5, 2, 4),
   // Add more food objects here as needed
 };
